@@ -1,33 +1,51 @@
-// In JavaScript, data types are classified into two categories:
-// 1) Primitive Data Types
-// 2) Non-Primitive (Reference) Data Types
+// JavaScript has two categories of data types: Primitive and Non-Primitive (Reference)
 
-/*
-  PRIMITIVE DATA TYPES (7 total):
-  Number, String, Boolean, Null, Undefined, Symbol, BigInt
+// ---------- Primitive Data Types ----------
+// Stored by value, immutable, held in stack memory
 
-  - Stored directly in stack memory
-  - Immutable (a new value is created instead of modifying the original)
-  - Compared and copied by value
+const totalScore = 100;
+const averageScore = 100.3;
+const isUserLoggedIn = false;
+const currentTemperature = null;
+let contactEmail;
 
-  NON-PRIMITIVE / REFERENCE DATA TYPES:
-  Array, Object, Function
+// Symbols are always unique, even with identical descriptions
+const primaryId = Symbol('123');
+const secondaryId = Symbol('123');
+console.log(primaryId === secondaryId); // false
 
-  - Stored in heap memory
-  - The variable only holds a reference (memory address) to the actual data
-  - Compared and copied by reference
-*/
+// BigInt supports numbers beyond the safe integer limit
+// const largeNumber = 3456543576654356754n;
 
-// ------- Symbol Example -------
-// A Symbol is always unique, even if two symbols are created with the same description
+// ---------- Non-Primitive (Reference) Data Types ----------
+// Stored by reference, held in heap memory
 
-const userId = Symbol('user')
-const adminId = Symbol('user')
+const comicCharacters = ["spiderman", "batman", "superman"];
 
-console.log(userId === adminId)
-// Output: false
-// Reason: Each Symbol has a unique identity in memory,
-// regardless of whether the description passed to it is identical
+let userProfile = {
+    name: "Aliza Tariq",
+    age: 21,
+};
+
+const greetUser = function () {
+    console.log("Hello world");
+};
+
+// ---------- typeof Behavior ----------
+// null returns "object" due to a legacy JavaScript bug
+console.log(typeof secondaryId); // "symbol"
+
+// ---------- Value vs Reference Behavior ----------
+
+let a = 10;
+let b = a;
+b = 20;
+console.log(a); // 10 — primitives copy independently
+
+let obj1 = { name: "Aliza" };
+let obj2 = obj1;
+obj2.name = "Sana";
+console.log(obj1.name); // "Sana" — objects share the same memory reference
 
 // ------- typeof Operator Results -------
 
