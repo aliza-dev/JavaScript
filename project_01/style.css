@@ -1,0 +1,38 @@
+body {
+  background-color: #f0f4f8;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.box-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.button {
+  padding: 15px 25px;
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 12px;
+  color: black;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  user-select: none;
+}
+
+.button:nth-child(1) { background-color: grey; }
+.button:nth-child(2) { background-color: white; border: 1px solid #ccc; }
+.button:nth-child(3) { background-color: blue; color: white; }
+.button:nth-child(4) { background-color: yellow; }
+.button:nth-child(5) { background-color: green; color: white; }
+.button:nth-child(6) { background-color: red; color: white; }

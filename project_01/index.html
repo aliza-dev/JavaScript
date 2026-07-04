@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Color Box Changer</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <div class="box-wrapper">
+    <div class="button" id="grey">Box 1</div>
+    <div class="button" id="white">Box 2</div>
+    <div class="button" id="blue">Box 3</div>
+    <div class="button" id="yellow">Box 4</div>
+    <div class="button" id="green">Box 5</div>
+    <div class="button" id="red">Box 6</div>
+  </div>
+  <script>
+    console.log("aliza")
+    const buttons = document.querySelectorAll('.button');
+    const body = document.querySelector('body');
+    buttons.forEach(function (button) {
+      console.log(button);
+      button.addEventListener('click', function (e) {
+        console.log(e);
+        console.log(e.target);
+        if (e.target.id === 'grey') {
+          body.style.backgroundColor = e.target.id;
+        }
+        if (e.target.id === 'white') {
+          body.style.backgroundColor = e.target.id;
+        }
+        if (e.target.id === 'blue') {
+          body.style.backgroundColor = e.target.id;
+        }
+        if (e.target.id === 'yellow') {
+          body.style.backgroundColor = e.target.id;
+        }
+        if (e.target.id === 'green') {
+          body.style.backgroundColor = e.target.id;
+        }
+        if (e.target.id === 'red') {
+          body.style.backgroundColor = e.target.id;
+        }
+      });
+    });
+  </script>
+</body>
+</html>
