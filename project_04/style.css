@@ -1,0 +1,81 @@
+body {
+  background-color: #4d4d4d;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  color: white;
+  text-align: center;
+}
+
+header {
+  background-color: #0d0d0d;
+  padding: 20px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+main {
+  padding: 30px 20px;
+}
+
+main > p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.form label {
+  display: block;
+  font-size: 48px;
+  margin: 40px 0 20px 0;
+}
+
+.guessField {
+  width: 350px;
+  padding: 14px;
+  font-size: 18px;
+  border: 3px solid #999;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+#subt {
+  display: block;
+  margin: 0 auto 30px auto;
+  padding: 18px 50px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #0d0d0d;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+#subt:hover {
+  background-color: #262626;
+}
+
+.lowOrHi h2 {
+  font-size: 22px;
+  margin: 10px 0 30px 0;
+}
+
+.resultParas p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.resultParas .button {
+  margin-top: 20px;
+}
+
+.resultParas .button h2 {
+  display: inline-block;
+  background-color: #0d0d0d;
+  padding: 14px 30px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 18px;
+}
